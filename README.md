@@ -6,4 +6,4 @@ Os parametros sao o nome do aluno e o email.
 
 Os parametros devem ser exibidos na tela em letra maiuscula, como resposta de que foi processado pelo servidor.
 
-Faça o mesmo envio tambem utilizando JSON.
+Faça o mesmo envio tambem utilizando JSON .
