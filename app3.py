@@ -9,9 +9,9 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/dados_1")
+@app.route("/dados")
 def dados():
-    return render_template("dados_1.html")
+    return render_template("dados.html")
 
 @app.route("/recebe-dados", methods=['POST'])
 def recebe_dados():
@@ -33,4 +33,4 @@ def recebe_json():
 
 
 if __name__ == '__main__':
-    app.run("localhost", port=5000, debug=True)
+    app.run("localhost", port=3839, debug=True)

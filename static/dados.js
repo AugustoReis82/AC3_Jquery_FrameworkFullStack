@@ -2,11 +2,11 @@ $('#envio').click( function(e) {
     e.preventDefault()
     let nome = $('[name=nome-aluno]').val()
     let email = $('[name=email-aluno]').val()
-    let backNome = $('[name=resp-nome]')
-    let backEmail = $('[name=resp-email]')
+    let respNome = $('[name=resp-nome]')
+    let respEmail = $('[name=resp-email]')
 
     if(nome.length == 0 || email.length == 0 ){
-        backNome.val('preencha todos os campos')
+        respNome.val('preencha todos os campos')
         return
     }
 
@@ -17,8 +17,8 @@ $('#envio').click( function(e) {
             data: $('form').serialize(),
             success: function(callback) {
                 console.log(callback)
-                backNome.val('Nome Recebido: ' + callback.nome)
-                backEmail.val('E-mail Recebido: ' + callback.email)
+                respNome.val('Nome Recebido: '  + callback.nome)
+                respEmail.val('Email Recebido: ' + callback.email)
                 nome.val('')
                 email.val('')
             },
